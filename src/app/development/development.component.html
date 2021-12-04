@@ -1,0 +1,70 @@
+<section>
+    <div class="flex">
+        <div class="flex flex-wrap flex-col w-1/5 bg-purple-600">
+            <a (click)="toggleLink1()">
+                <div class="p-5 border-b border-r border-solid border-yellow-100 text-yellow-100">
+                    Link 1
+                </div>
+            </a>
+            <a (click)="toggleLink2()">
+                <div class="p-5 border-b border-r border-solid border-yellow-100 text-yellow-100">
+                    Link 2
+                </div>
+            </a>
+            <a (click)="toggleLink3()">
+                <div class="p-5 border-b border-r border-solid border-yellow-100 text-yellow-100">
+                    Link 3
+                </div>
+            </a>
+            <a (click)="toggleLink4()">
+                <div class="p-5 border-b border-r border-solid border-yellow-100 text-yellow-100">
+                    Link 4
+                </div>
+            </a>
+            <a (click)="toggleLink5()">
+                <div class="p-5 border-b border-r border-solid border-yellow-100 text-yellow-100">
+                    Link 5
+                </div>
+            </a>
+            <a (click)="toggleLink6()">
+                <div class="p-5 border-b border-r border-solid border-yellow-100 text-yellow-100">
+                    Link 6
+                </div>
+            </a>
+            <a (click)="toggleLink7()">
+                <div class="p-5 border-b border-r border-solid border-yellow-100 text-yellow-100">
+                    Link 7
+                </div>
+            </a>
+        </div>
+
+        <div *ngIf="isShowLink1">
+            <h2>Responsive Sidebar Example</h2>
+            <p>This example use media queries to transform the sidebar to a top navigation bar when the screen size is
+                700px
+                or less.</p>
+            <p>We have also added a media query for screens that are 400px or less, which will vertically stack and
+                center
+                the navigation links.</p>
+            <h3>Resize the browser window to see the effect.</h3>
+        </div>
+        <div *ngIf="isShowLink2">
+            Link 2 Content
+        </div>
+        <div *ngIf="isShowLink3">
+            Link 3 Content
+        </div>
+        <div *ngIf="isShowLink4">
+            Link 4 Content
+        </div>
+        <div *ngIf="isShowLink5">
+            Link 5 Content
+        </div>
+        <div *ngIf="isShowLink6">
+            Link 6 Content
+        </div>
+        <div *ngIf="isShowLink7">
+            Link 7 Content
+        </div>
+    </div>
+</section>
